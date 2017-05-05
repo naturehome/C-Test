@@ -15,8 +15,14 @@ class CObj : public std::enable_shared_from_this < CObj >
 protected:
 	CObj(){ std::cout << "Create CObj" << std::endl; }
 	~CObj() {std::cout << "Destory CObj" << std::endl; }
+
+
 };
 
+std::ostream& operator <<(std::ostream& os, const CObj* obj)
+{
+	return os << "test";
+}
 
 class  CObjMgr
 {
@@ -47,8 +53,54 @@ int SafeDivide(int num, int den)
 
 #include <sstream>
 
+void GetResultofPING()
+{
+	std::string strcmd = "start /b ping 192.168.1.231 > ping.txt";
+	system(strcmd.c_str());
+	std::fstream inFile;
+	try
+	{
+		inFile.open("ping.txt", std::ios_base::in);
+		while (inFile.eof())
+		{
+			char szInfo[80] = { 0 };
+			inFile.getline(szInfo, sizeof(szInfo));
+		}
+	}
+	catch (...)
+	{
+
+	}
+
+	
+	
+	inFile.close();
+	system("del ping.txt");
+}
+
+
 int _tmain(int argc, _TCHAR* argv[])
 {
+	CObjMgr* pMgr = new CObjMgr();
+
+	std::shared_ptr<CObj> pObj1 = pMgr->create();
+	std::cout << pObj1;
+	//GetResultofPING();
+	int i;
+	std::cin.tie(&std::cout);
+	std::cout<<"Enter a number.";
+	std::cin>>i;
+	int a = 0;
+
+
+	std::ifstream inpputFile("C:\\Users\\zhangyabin\\Desktop\\aaa\\ETFileMD5Tool.exe",std::ios::binary);
+	
+	if (inpputFile.good())
+	{
+		std::cout<< "OK";
+
+	}
+#if 0
 	std::default_random_engine generator;
 	std::uniform_int_distribution<int> dis(0,34);
 	std::uniform_int_distribution<int> one(0,17);
@@ -60,7 +112,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout<< one(generator) << std::endl; 
 
 	std::cout<< "OK";
-#if 0
+
 	std::ifstream inFile("input.txt");
 	std::ofstream outFile("output.txt");
 
