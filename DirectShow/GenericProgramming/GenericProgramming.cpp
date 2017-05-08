@@ -63,7 +63,7 @@ void GameBoard::CopyFrom(const GameBoard& src)
 		for (size_t j = 0; j < mHeight; j++)
 			if (mCells[i][j] != nullptr)
 			{
-				mCells[i][j] = src.mCells[i][j]->Clone();
+				//mCells[i][j] = src.mCells[i][j]->Clone();
 			}	
 	}
 }
@@ -111,8 +111,8 @@ GameBoard& GameBoard::operator = (const GameBoard& rhs)
 
 void GameBoard::setPieceAt(size_t x, size_t y, const GamePiece* inPiece)
 {
-	if (inPiece)
-		mCells[x][y] = inPiece->Clone();
+	//if (inPiece)
+	//	mCells[x][y] = inPiece->Clone();
 }
 
 GamePiece* GameBoard::getPieceAt(size_t x, size_t y)
@@ -125,8 +125,41 @@ const GamePiece* GameBoard::getPieceAt(size_t x, size_t y) const
 	return mCells[x][y];
 }
 
+#include <type_traits>
+#include <iostream>
+#include <string>
+
+#include <memory>
+#include <regex>
+#include <algorithm>
+#include <functional>
+#include <array>
+
 int _tmain(int argc, _TCHAR* argv[])
 {
+	//×Ö·ûÌæ»»
+	std::string strWindowPath = "E:\\FileRecv\\images\\images\\btn_13.png";
+	//std::for_each(strWindowPath.begin(), strWindowPath.end(), [](char& c){ c = (c == '\\' ? '/' : c); });
+
+
+	std::replace_if(strWindowPath.begin(), strWindowPath.end(), std::bind(std::equal_to<char>(), std::placeholders::_1, '\\'), '/');
+
+	std::replace(strWindowPath.begin(), strWindowPath.end(), '\\', '/');
+	////ÅÐ¶Ï»ØÎÄ
+	//std::string str("helloolleh");
+	//bool bret = std::equal(str.begin(), str.begin() + str.length() / 2, str.rbegin());
+	//
+	////×Ö·û´®·­×ª
+	//std::reverse(strWindowPath.begin(), strWindowPath.end());
+	std::cout << strWindowPath << std::endl;
+
+	const std::size_t N = 100;
+	int* a = new int[N];
+	int* end = a + N;
+	for (std::ptrdiff_t i = N; i > 0; --i)
+		std::cout << (*(end - i) = i) << ' ';
+	delete[] a;
+	
 	return 0;
 }
 
