@@ -194,7 +194,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	
 
 
-#if 0
+
 	IGraphBuilder *pGraph;
 	ICaptureGraphBuilder2 *pBuild;
 	IEnumMoniker *pEnum;
@@ -334,7 +334,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 	
-
+#if 0
 	CObjMgr* pMgr = new CObjMgr();
 
 	std::shared_ptr<CObj> pObj1 = pMgr->create();

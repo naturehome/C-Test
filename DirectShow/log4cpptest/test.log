@@ -1,0 +1,8 @@
+1495591743 ERROR  : root error
+1495591743 ERROR sub1 : sub1 error
+1495591743 WARN sub1 : sub1 warn
+1495591743 WARN  : 1 + 1 == two ?
+1495591743 ERROR  : Streamed root error
+1495591743 ERROR sub1 : Streamed sub1 error
+1495591743 WARN sub1 : Streamed sub1 warn
+1495591743 ERROR  : Another streamed error

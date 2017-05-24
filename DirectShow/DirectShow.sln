@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asio", "asio\asio.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asio2", "asio2\asio2.vcxproj", "{30A3799A-A2E2-4D7E-BD27-2BB2ED1A9639}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CurlTest", "CurlTest\CurlTest.vcxproj", "{E11CDA37-D61D-4F6E-9398-0148CE3C2F37}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cpptest", "log4cpptest\log4cpptest.vcxproj", "{9021FC2C-801C-4616-AB79-A69A1868F447}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +37,14 @@ Global
 		{30A3799A-A2E2-4D7E-BD27-2BB2ED1A9639}.Debug|Win32.Build.0 = Debug|Win32
 		{30A3799A-A2E2-4D7E-BD27-2BB2ED1A9639}.Release|Win32.ActiveCfg = Release|Win32
 		{30A3799A-A2E2-4D7E-BD27-2BB2ED1A9639}.Release|Win32.Build.0 = Release|Win32
+		{E11CDA37-D61D-4F6E-9398-0148CE3C2F37}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E11CDA37-D61D-4F6E-9398-0148CE3C2F37}.Debug|Win32.Build.0 = Debug|Win32
+		{E11CDA37-D61D-4F6E-9398-0148CE3C2F37}.Release|Win32.ActiveCfg = Release|Win32
+		{E11CDA37-D61D-4F6E-9398-0148CE3C2F37}.Release|Win32.Build.0 = Release|Win32
+		{9021FC2C-801C-4616-AB79-A69A1868F447}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9021FC2C-801C-4616-AB79-A69A1868F447}.Debug|Win32.Build.0 = Debug|Win32
+		{9021FC2C-801C-4616-AB79-A69A1868F447}.Release|Win32.ActiveCfg = Release|Win32
+		{9021FC2C-801C-4616-AB79-A69A1868F447}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
