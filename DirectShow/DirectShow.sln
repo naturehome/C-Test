@@ -15,6 +15,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CurlTest", "CurlTest\CurlTe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cpptest", "log4cpptest\log4cpptest.vcxproj", "{9021FC2C-801C-4616-AB79-A69A1868F447}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stringTestDll", "stringTestDll\stringTestDll.vcxproj", "{E30EE5D0-BC10-4917-AD2D-BFBDDA3A2829}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileIO", "FileIO\FileIO.vcxproj", "{404E031A-39E6-480B-BD5A-4842F51D9CBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -45,6 +49,14 @@ Global
 		{9021FC2C-801C-4616-AB79-A69A1868F447}.Debug|Win32.Build.0 = Debug|Win32
 		{9021FC2C-801C-4616-AB79-A69A1868F447}.Release|Win32.ActiveCfg = Release|Win32
 		{9021FC2C-801C-4616-AB79-A69A1868F447}.Release|Win32.Build.0 = Release|Win32
+		{E30EE5D0-BC10-4917-AD2D-BFBDDA3A2829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E30EE5D0-BC10-4917-AD2D-BFBDDA3A2829}.Debug|Win32.Build.0 = Debug|Win32
+		{E30EE5D0-BC10-4917-AD2D-BFBDDA3A2829}.Release|Win32.ActiveCfg = Release|Win32
+		{E30EE5D0-BC10-4917-AD2D-BFBDDA3A2829}.Release|Win32.Build.0 = Release|Win32
+		{404E031A-39E6-480B-BD5A-4842F51D9CBF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{404E031A-39E6-480B-BD5A-4842F51D9CBF}.Debug|Win32.Build.0 = Debug|Win32
+		{404E031A-39E6-480B-BD5A-4842F51D9CBF}.Release|Win32.ActiveCfg = Release|Win32
+		{404E031A-39E6-480B-BD5A-4842F51D9CBF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
